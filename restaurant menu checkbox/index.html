@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="details">
+            <h1>FOOD MENU</h1>
+            <table width="80%" style="margin-top: 10px;">
+                <tr class="table-row" height="50px">
+                    <td><u>NAME</u></td>
+                    <td><u>PRICE</u></td>
+                    <td><u>BUY</u></td>
+                </tr>
+                <tr class="table-row" height="35px">
+                    <td>Pizza</td>
+                    <td>450</td>
+                    <td><input class="btn" type="checkbox" value="450" id="1" onclick="addcart()" name="Pizza"></input></td>
+                </tr>
+                <tr class="table-row" height="35px">
+                    <td>Burger</td>
+                    <td>120</td>
+                    <td><input class="btn" type="checkbox" value="120" id="2" onclick="addcart()" name="Burger"></input></td>
+                </tr>
+                <tr class="table-row" height="35px">
+                    <td>Drinks</td>
+                    <td>50</td>
+                    <td><input class="btn" type="checkbox" value="50" id="3" onclick="addcart()" name="Drinks"></input></td>
+                </tr>
+                <tr class="table-row" height="35px">
+                    <td>Desert</td>
+                    <td>250</td>
+                    <td><input class="btn" type="checkbox" value="250" id="4" onclick="addcart()" name="Desert"></input></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container" >
+        <div class="details">
+            <table width="80%" style="margin-top: 10px;">
+                <thead >
+                    <tr class="table-row">
+                        <td><u>NAME</u></td>
+                        <td><u>PRICE</u></td>
+                        <td><u>QUANTITY</u></td>
+                        <td><u>REMOVE</u></td>
+                    </tr>
+                </thead>
+                <tbody id="main-line">
+                    
+                </tbody>
+                <tfoot id="total-line">
+                    
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <script src="new.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+
+        .img {
+            display: flex;
+            overflow: hidden;
+            width: 700px;
+            height: 400px;
+        }
+
+        .img img {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .img img.active {
+            display: block;
+        }
+
+        .btnclass {
+            margin: 20px;
+        }
+
+        #prevBtn {
+            width: 70px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #nextBtn {
+            width: 70px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #prevBtn:hover {
+            background-color: white;
+            color: black;
+            transition: .3s;
+        }
+
+        #nextBtn:hover {
+            background-color: white;
+            color: black;
+            transition: .3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="img">
+            <img src="./img/hero1.jpg" alt="" class="active">
+            <img src="./img/hero2.jpg" alt="">
+            <img src="./img/hero3.jpg" alt="">
+            <img src="./img/wedding.jpeg" alt="">
+            <img src="./img/marriage.jpg" alt="">
+        </div>
+        <div class="btnclass">
+            <button type="button" id="prevBtn">Previous</button>
+            <button type="button" id="nextBtn">Next</button>
+        </div>
+    </div>
+    <script src="butnslide.js" defer></script>
+</body>
+
+</html>

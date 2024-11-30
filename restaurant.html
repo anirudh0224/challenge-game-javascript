@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #headingmain {
+            font-size: 40px;
+            background-color: black;
+            color: white;
+        }
+
+        #prdhead {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center" width="100%" border="1" cellpadding="10px">
+        <th colspan="5" bgcolor="lightgray" id="headingmain">Hotel Menu</th>
+        <tr bgcolor="lightyellow" id="prdhead">
+            <th width="150px">Product Image</th>
+            <th width="115px">Product Name</th>
+            <th width="104px">Product Price</th>
+            <th width="947px">Product Description</th>
+            <th width="90px">Product Add</th>
+        </tr>
+        <tr align="center">
+            <td><img src="https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"
+                    width="100px" height="100px" alt=""></td>
+            <td class="item-menu">Burger</td>
+            <td data-price="150">150</td>
+            <td>A hamburger, or simply a burger, is a dish consisting of fillings—usually a patty of ground meat,
+                typically beef—placed inside a sliced bun or bread roll.</td>
+            <td><input type="checkbox" class="item-checkbox"></td>
+        </tr>
+        <tr align="center">
+            <td><img src="https://www.southernliving.com/thmb/3x3cJaiOvQ8-3YxtMQX0vvh1hQw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2652401_QFSSL_SupremePizza_00072-d910a935ba7d448e8c7545a963ed7101.jpg"
+                    width="150px" height="100px" alt=""></td>
+            <td class="item-menu">Pizza</td>
+            <td data-price="499">499</td>
+            <td>Pizza marinara, also known as pizza alla marinara, is a style of pizza in Neapolitan cuisine seasoned
+                with only tomato sauce, extra virgin olive oil, oregano and garlic. It is supposedly the
+                oldest tomato-topped pizza.</td>
+            <td><input type="checkbox" class="item-checkbox"></td>
+        </tr>
+        <tr align="center">
+            <td><img src="https://img.freepik.com/free-photo/grilled-sandwich-with-bacon-fried-egg-tomato-lettuce-served-wooden-cutting-board_1150-42571.jpg"
+                    width="150px" height="100px" alt=""></td>
+            <td class="item-menu">Sandwich</td>
+            <td data-price="49">49</td>
+            <td>Sandwiches are a popular type of lunch food, taken to work, school, or picnics to be eaten as part of a
+                packed lunch. The bread may be plain or be coated with condiments, such as mayonnaise or mustard, to
+                enhance its flavour and texture.</td>
+            <td><input type="checkbox" class="item-checkbox"></td>
+        </tr>
+        <tr align="center">
+            <td><img src="https://img.freepik.com/free-photo/sweet-summer-milkshake-wood-table-background-generative-ai_188544-12118.jpg"
+                    width="150px" height="100px" alt=""></td>
+            <td class="item-menu">Milkshake</td>
+            <td data-price="199">199</td>
+            <td>Similar to milk smoothie, milkshakes are also blended cold dairy beverages. It is usually prepared by
+                milk, ice cream or iced milk, emulsifier and/or stabilizer, and flavorings or sweeteners (e.g., fruit
+                syrup or chocolate sauce). Milkshake contains ice cream unlike milk smoothie.</td>
+            <td><input type="checkbox" class="item-checkbox"></td>
+        </tr>
+        <tr align="center">
+            <td><img src="https://preppykitchen.com/wp-content/uploads/2023/10/Blueberry-Muffins-Recipe-Card.jpg"
+                    width="150px" height="100px" alt=""></td>
+            <td class="item-menu">Muffin</td>
+            <td data-price="249">249</td>
+            <td>They are similar to cupcakes in size and cooking methods, the main difference being that cupcakes tend
+                to be sweet desserts using cake batter and which are often topped with sugar icing (American frosting).
+                Muffins may have solid items mixed into the batter, such as berries, chocolate chips or nuts.</td>
+            <td><input type="checkbox" class="item-checkbox"></td>
+        </tr>
+        <tr align="center">
+            <td><img src="https://www.nestleprofessional.in/sites/default/files/2021-08/Hakka-Noodles.jpg" width="150px"
+                    height="100px" alt=""></td>
+            <td class="item-menu">Noodles</td>
+            <td data-price="79">79</td>
+            <td>Noodles are a type of food made from unleavened dough which is either rolled flat and cut, stretched,
+                or extruded, into long strips or strings. Noodles are a staple food in many cultures and made into a
+                variety of shapes.</td>
+            <td><input type="checkbox" class="item-checkbox"></td>
+        </tr>
+        <tr align="center">
+            <td><img src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
+                    width="150px" height="100px" alt=""></td>
+            <td class="item-menu">Cake</td>
+            <td data-price="799">799</td>
+            <td>Cakes are distinguished from breads in that they are usually sweet, with many other ingredients besides
+                flour. Flour, fat, raising agents, eggs, sugar and fruit are the most common ingredients but other
+                ingredients are limited only by the ingenuity of the baker.</td>
+            <td><input type="checkbox" class="item-checkbox"></td>
+        </tr>
+        <tr align="center" class="classprd">
+            <td><img src="https://media.istockphoto.com/id/1054228718/photo/indian-sweets-in-a-plate-includes-gulab-jamun-rasgulla-kaju-katli-morichoor-bundi-laddu.jpg?s=612x612&w=0&k=20&c=hYWCXLaldKvhxdBa83M0RnUij7BCmhf-ywWdvyIXR40="
+                    width="150px" height="100px" alt=""></td>
+            <td class="item-menu">Sweets</td>
+            <td data-price="1099">1099</td>
+            <td>Mithai (sweets) are the confectionery and desserts of the Indian subcontinent. Thousands of
+                dedicated shops in India, Bangladesh, Nepal, Pakistan and Sri Lanka sell nothing but sweets</td>
+            <td><input type="checkbox" class="item-checkbox"></td>
+        </tr>
+    </table>
+
+    <table align="center" width="100%" border="1" cellpadding="10px" id="billTable">
+        <th colspan="5" bgcolor="lightgray" id="headingmain">Your Bill</th>
+        <tr bgcolor="lightyellow" id="prdhead">
+            <th width="150px">Product Image</th>
+            <th width="115px">Product Name</th>
+            <th width="104px">Product Price</th>
+            <th width="947px">Product Description</th>
+            <th width="90px">Product Remove</th>
+        </tr>
+        <tr>
+            <table width="100%" align="center">
+                <tr>
+                    <th width="150px"></th>
+                    <th width="115px"></th>
+                    <th width="104px"></th>
+                    <th width="947px"></th>
+                    <th width="90px"></th>
+                </tr>
+                <tr align="center">
+                    <td colspan="3" id="total-price">0</td>
+                    <td colspan="2">Total Bill</td>
+                </tr>
+            </table>
+        </tr>
+    </table>
+    <script src="restaurant.js" defer></script>
+</body>
+
+</html>

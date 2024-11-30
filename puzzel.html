@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puzzel</title>
+    <link rel="stylesheet" href="tictoc.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .boxx{
+            background-color: aquamarine;
+            color: white;
+            font-size: 50px;
+            border: none;
+            border-radius: 5px;
+            margin: 3px;
+            box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+        }
+        .boxx:hover{
+            background-color: aqua;
+            transition: .3s;
+            box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+        }
+        #Click{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #Click:hover{
+            background-color: white;
+            color: black;
+            transition: .4s;
+            box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+        }
+    </style>
+</head>
+
+<body>
+    <script src="puzzel.js" defer></script>
+    <div class="mainbox">
+        <button class="boxx" class="btnpuz" id="0"></button>
+        <button class="boxx" class="btnpuz" id="1"></button>
+        <button class="boxx" class="btnpuz" id="2"></button>
+        <button class="boxx" class="btnpuz" id="3"></button>
+        <button class="boxx" class="btnpuz" id="4"></button>
+        <button class="boxx" class="btnpuz" id="5"></button>
+        <button class="boxx" class="btnpuz" id="6"></button>
+        <button class="boxx" class="btnpuz" id="7"></button>
+        <button class="boxx" class="btnpuz" id="8"></button>
+
+    </div>
+    <div id="rst">
+        <button class="rstbtn" id="Click">Reset</button>
+    </div>
+
+</body>
+
+</html>
